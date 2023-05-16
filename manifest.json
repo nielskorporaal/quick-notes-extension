@@ -1,0 +1,17 @@
+{
+   "name": "Quick Notes",
+   "version": "1.0",
+   "manifest_version": 3,
+   "description": "Store Quick Notes",
+   "permissions": [
+       "storage"
+   ],
+   "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+   "action": {
+       "default_popup": "popup.html"
+   }
+}

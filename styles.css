@@ -1,0 +1,101 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #202020;
+      --text-color: #ffffff;
+    }
+  }
+
+  .line-numbers {
+    float: left;
+    text-align: left;
+    padding-right: 5px;
+    color: #999999;
+    user-select: none;
+    pointer-events: none;
+    white-space: pre;
+    line-height: 16px;
+    font-size: 16px;
+  }
+
+  .textarea-container {
+    position: relative;
+  }
+
+  .textarea-container textarea {
+    min-width: var(--character-limit);
+    max-width: var(--character-limit);
+    min-height: 50ch;
+    max-height: 50ch;
+    padding-left: 45px;
+    line-height: 16px;
+    font-size: 16px;
+    max-width: 100%;
+    background-color: rgba(64,65,79);
+    color: rgba(255,255,255);
+    resize: none;
+    border-radius: 5px;
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .textarea-container .line-numbers-container {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    height: calc(100% - 6px);
+    width: 5ch;
+    pointer-events: none;
+    border-right: 1px dashed #999999;
+    overflow: hidden;
+  }
+
+  button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  button:hover{
+    background-color: #3a863d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
